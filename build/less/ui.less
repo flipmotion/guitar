@@ -1,3 +1,60 @@
-.my {
-	
+.checkbox {
+	label {
+		display: inline-block;
+		position: relative;
+		padding-left: 15px; 
+		line-height: 20px;
+		&::before {
+			content: "";
+			display: inline-block;
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			right: 0;
+			top: 0px;
+			margin-left: -20px;
+			border: 1px solid #b6bfbe;
+			background-color: #fff;
+			transition: border 0.15s ease-in-out, color 0.15s ease-in-out; 
+		}
+		&::after {
+			display: inline-block;
+			position: absolute;
+			width: 16px;
+			height: 16px;
+			right: 3px;
+			top: 0px;
+			margin-left: -20px;
+			padding-left: 2px;
+			padding-top: 0px;
+			font-size: 14px;
+			font-weight: normal;
+			color: #4eaea8; 
+		}
+	}
+	input[type="checkbox"] {
+		opacity: 0; 
+	}
+	input[type="checkbox"]:focus + label::before {
+		outline: none;
+	}
+	input[type="checkbox"]:checked + label::after {
+		font-family: 'Glyphicons Halflings';
+		content: "\e013";
+	}
+	input[type="checkbox"]:checked + label::before {
+		border-color: #4eaea8;
+	}
+	input[type="checkbox"]:disabled + label {
+		opacity: 0.65; 
+	}
+	input[type="checkbox"]:disabled + label::before {
+		background-color: #eeeeee;
+		cursor: not-allowed;
+	}
+}
+.full-width {
+	img {
+		width: 100%;
+	}
 }

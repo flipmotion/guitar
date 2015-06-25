@@ -1,3 +1,181 @@
 .header {
-	
+	&-lvl-1 {
+		padding: 20px 0 10px;
+		.logo {
+			display: table;
+		}
+		a {
+			color: @grey;
+			text-decoration: none;
+			font-size: 13px;
+			.OPCB;
+		}
+		
+	}
+	.contanct-info {
+		padding-top: 5px;
+		display: table;
+		margin: 0 auto;
+		width: auto;
+		div:first-child {
+			&>* {
+				display: table-cell;
+			}
+			a,p {
+				.OPCB;
+				color: @grey;
+				font-size: 33px;
+				
+			}
+			a {
+				padding-left:10px;
+			}
+		}
+	}
+	.top-navigation {
+		ul {
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			li {
+				display: inline-block;
+				vertical-align: middle;
+				p {
+					display: inline-block;
+					vertical-align: middle;
+					margin: 0;
+				}
+				&:after {
+					content: '';
+					display: inline-block;
+					vertical-align: middle;
+					margin-left: 10px;
+					margin-right: 5px;
+					width: 1px; 
+					height: 15px;
+					background: @grey;
+				}
+				a {
+					.OPCB;
+					text-transform: uppercase;
+					font-size: 16px;
+					color: @grey;
+					text-decoration: none;
+					&:focus,&:hover {
+						p {
+							text-decoration: underline;
+						}
+					}
+				}
+				&:last-child {
+					&:after {
+						content: none;
+					}
+				}
+			}
+		}
+		.icon {
+			display: inline-block;
+			vertical-align: middle;
+			width: 13px;
+			height: 13px;
+			background: url(../img/trash.png) center center no-repeat;
+			margin-left: 5px;
+		}
+		nav {
+			float: right;
+		}
+	}
+	.shipping-info {
+		.title {
+			color: @grey;
+			font-size: 45px;
+			.OPCB;
+			margin: 20px 0 0 0;
+			line-height: 0.7;
+		}
+		img {
+			margin-right: 10px;
+		}
+		.subtitle {
+			color: @grey;
+			font-size: 20px;
+			.OPCB;
+		}
+	}
+	&-lvl-2 {
+		.collapse.navbar-collapse {
+			padding: 0;
+		}
+		background: #000;
+		.navbar.navbar-default {
+			background: 0 0;
+			margin: 0;
+			border-radius: 0;
+			border: none;
+			.nav.navbar-nav {
+				width: 100%;
+				float: none;
+				text-align: justify;
+				height: 40px;
+				form {
+					padding: 0;
+				}
+				li {
+					float: none;
+					display: inline-block;
+					vertical-align: middle;
+					&.justify {
+						display: inline-block;
+						width: 100%;
+						height: 0;
+						visibility: hidden;
+					}
+					a {
+						padding: 0;
+						text-transform: uppercase;
+						font-size: 21px;
+						color: #fff;
+						.OPCB;
+						&:hover,&:focus {
+							text-decoration: underline;
+							
+						}
+					}
+				}
+			}
+		}
+		.navbar-form {
+			
+			.form-control {
+				position: relative;
+				height: auto;
+				border: none;
+				.OPCB;
+				font-size: 16px;
+				color: #000;
+				width: 230px;
+			}
+			input {
+				border-radius: 0;
+			}
+			button {
+				background: #fff;
+				border: none;
+				outline: none;
+				border-radius: 0;
+				&:active {
+					outline: none;
+					background: #fff;
+					box-shadow: none;
+				}
+			}
+			.input-group-addon {
+				padding: 0;
+				border: 0;
+				background: #fff;
+				border-radius: 0;
+			}
+		}
+	}
 }
