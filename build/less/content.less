@@ -99,6 +99,9 @@
 		&-title {
 			margin-top: 0;
 			margin-bottom: 28px;
+			h3{
+				margin-top: 0;
+			}
 		}
 		&-buy {
 			margin-bottom: 30px;
@@ -273,6 +276,26 @@
 			}
 			&:active {
 				opacity: .9;
+			}
+		}
+	}
+	div[data-item="slider-sync-1"] {
+		margin-top: 10px;
+		position: relative;
+		.item {
+			margin: 1px;
+			border: 1px solid #333;
+		}
+		.my-arrow-left {
+			-webkit-user-select: none;
+			position: relative;
+			z-index:1;
+			width: 65px;
+			height: 65px;
+			background: url(../img/navi.png)  left top 6px no-repeat;
+			cursor: pointer;
+			&:hover,&:focus {
+				background: url(../img/navi.png)  left bottom 2px no-repeat;
 			}
 		}
 	}
